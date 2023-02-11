@@ -9,23 +9,15 @@ import java.util.Scanner;
 public class Ejercicio2 {
 
 	public static void main(String[] args) {
-        Scanner teclado= new Scanner(System.in);
-        int num1, num2;
+        int num1 = 4;
+        int num2 = 8;
 
-        System.out.println("Introduce el Número 1 ");
-        num1=teclado.nextInt();
-        System.out.println("Introduce el Número 2 ");
-        num2=teclado.nextInt();
-       
-        num1=num1+num2;
-        num2=num1-num2;
-        num1=-(num2-num1);
+        System.out.println("La primera variable tiene valor " + num1 + " y la segunda variable " + num2);
+        
+        int aux = num1;
+        num1 = num2;
+        num2 = aux;
 
-        System.out.println("Número 1 es: " + num1);
-        System.out.println("Número 2 es: " + num2);
-
-    teclado.close();
-
+        System.out.println("La primera variable tiene valor " + num1 + " y la segunda variable " + num2);
 	}
-
 }
