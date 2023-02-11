@@ -12,9 +12,9 @@ public class Ejercicio2 {
         Scanner teclado= new Scanner(System.in);
         int num1, num2;
 
-        System.out.println("Introduce el Número 1 ");
+        System.out.println("Por Favor, Introduce el Número 1 ");
         num1=teclado.nextInt();
-        System.out.println("Introduce el Número 2 ");
+        System.out.println("Por Favor, Introduce el Número 2 ");
         num2=teclado.nextInt();
        
         num1=num1+num2;
