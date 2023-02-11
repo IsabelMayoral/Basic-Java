@@ -6,12 +6,17 @@ import java.util.Scanner;
 public class Ejercicio3 {
 
 	public static void main(String[] args) {
-        int num = 13543;
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Por favor, introduce un número de 5 cifras");
+		
+        int num = teclado.nextInt();
         int unidades = num%10;
         int decenas = (num/10)%10;
         int centenas = (num/10/10)%10;
         int unidadesMillar = (num/10/10/10)%10;
         int centenasMillar = (num/10/10/10/10)%10;
         System.out.println("El número " + num + " al revés es: " + unidades + decenas + centenas + unidadesMillar + centenasMillar);
+        teclado.close();
 	}
 }
