@@ -21,8 +21,8 @@ public class Ejercicio2 {
         num2=num1-num2;
         num1=-(num2-num1);
 
-        System.out.println("Número 1 es: " + num1);
-        System.out.println("Número 2 es: " + num2);
+        System.out.println("Éstas son tus variables intercambiadas:");
+        System.out.println("Número 1: " + num1 + "Número2: " + num2);
 
     teclado.close();
 
