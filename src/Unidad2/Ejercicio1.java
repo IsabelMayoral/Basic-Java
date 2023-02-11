@@ -8,15 +8,14 @@ import java.util.Scanner;
 public class Ejercicio1 {
 
 	public static void main(String[] args) {
-        Scanner entrada1= new Scanner(System.in);
+        Scanner entrada= new Scanner(System.in);
 
         System.out.println("BIENVENIDO A LA CALCULADORA MÚLTIPLE ");
         System.out.printf("Introduce 2 números con 2 decimales, por favor ");
-        double num1=entrada1.nextDouble();
+        double num1=entrada.nextDouble();
 
-        Scanner entrada2= new Scanner(System.in);
         System.out.println("Introduce otro número seguido de una coma y 2 decimales, por favor. ");
-        double num2= entrada2.nextDouble();
+        double num2= entrada.nextDouble();
        
 
         System.out.println("Aquí tienes las operaciones: ");
@@ -35,7 +34,6 @@ public class Ejercicio1 {
         System.out.print("RESTO ");
         System.out.printf("%.2f ", num1%num2);
 
-    entrada1.close();
-    entrada2.close();
+    entrada.close();
 	}
 }
