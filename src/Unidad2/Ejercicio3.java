@@ -6,22 +6,12 @@ import java.util.Scanner;
 public class Ejercicio3 {
 
 	public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Introduce un número de 5 cifras: ");
-        int num = teclado.nextInt();
-        int resto;
-        int numInvertido = 0;
-        while ((Integer.toString(num).length() != 5) || (num<0)) {
-            System.out.println("El número introducido debe de tener 5 dígitos y ser mayor que cero");
-            teclado.nextInt();
-        }
-        while (num > 0) {
-                resto = num % 10;
-
-                num = num/10; // num/=10;
-                numInvertido = numInvertido * 10 + resto;
-        }
-            System.out.println("El número invertido es: " + numInvertido);
-        teclado.close();
+        int num = 13543;
+        int unidades = num%10;
+        int decenas = (num/10)%10;
+        int centenas = (num/10/10)%10;
+        int unidadesMillar = (num/10/10/10)%10;
+        int centenasMillar = (num/10/10/10/10)%10;
+        System.out.println("El número " + num + " al revés es: " + unidades + decenas + centenas + unidadesMillar + centenasMillar);
 	}
 }
